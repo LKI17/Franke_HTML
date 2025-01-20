@@ -1,0 +1,486 @@
+/* Allgemeine Einstellungen */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    /* Helleres Grau-Blau für modernen Look */
+    color: #444;
+    background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
+    /* Leichtes Muster im Hintergrund */
+}
+
+/* Header */
+header {
+    background-color: #00796b;
+    /* Warmer Grünton */
+    color: white;
+    text-align: center;
+    padding: 1.5em 1.5em;
+    /* Mehr Abstand für ein luftiges Design */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    /* Etwas stärkeren Schatten */
+    border-bottom: 5px solid #004d40;
+    /* Dunklerer Rand unten für mehr Kontrast */
+    position: relative;
+}
+
+/* Geometrische Kreise im Header */
+header::before {
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: -10%;
+    width: 250px;
+    height: 250px;
+    background-color: rgba(255, 87, 34, 0.2);
+    /* Orange Kreis */
+    border-radius: 50%;
+    z-index: -1;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    bottom: 10%;
+    right: -10%;
+    width: 180px;
+    height: 180px;
+    background-color: rgba(33, 150, 243, 0.2);
+    /* Blau Kreis */
+    border-radius: 50%;
+    z-index: -1;
+}
+
+/* Navigation */
+nav {
+    background-color: #004d40;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 1.2em;
+    display: block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav ul li a:hover {
+    background-color: #00897b;
+    border-radius: 6px;
+    transform: scale(1.05);
+    /* Vergrößerung beim Hover für mehr Interaktivität */
+}
+
+/* Aktiver Menüpunkt */
+nav ul li a.active {
+    background-color: #00796b;
+    /* Dunkler Grünton für den aktiven Menüpunkt */
+    color: white;
+    /* Weißer Text */
+    font-weight: bold;
+    /* Fetter Text */
+    border-radius: 6px;
+    /* Abgerundete Ecken für den aktiven Link */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Leichter Schatten */
+    transform: scale(1.05);
+    /* Vergrößern beim aktiven Link */
+}
+
+/* Hauptbereich */
+main {
+    padding: 1.5em;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Weitere Geometrische Muster im Hintergrund */
+main::before {
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: -15%;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(0, 123, 255, 0.2);
+    /* Blauer Kreis */
+    border-radius: 50%;
+    z-index: -1;
+}
+
+main::after {
+    content: "";
+    position: absolute;
+    bottom: 10%;
+    right: -10%;
+    width: 250px;
+    height: 250px;
+    background-color: rgba(33, 150, 243, 0.2);
+    /* Blauer Kreis (angepasst) */
+    border-radius: 50%;
+    z-index: -1;
+}
+
+/* Listenelemente im Hauptbereich */
+main ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+main ul li {
+    padding: 0.4em 0;
+    /* Reduzierter Abstand zwischen den Elementen */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Abstand zwischen Aufzählungszeichen und Text */
+    transition: background-color 0.3s ease;
+}
+
+/* Aufzählungszeichen durch benutzerdefinierte Symbole */
+main ul li::before {
+    content: "•";
+    /* Klassisches Aufzählungszeichen, kann durch andere Zeichen oder Icons ersetzt werden */
+    color: #00796b;
+    /* Farbige Aufzählungszeichen im Grünton */
+    font-size: 1.5em;
+    /* Größeres Aufzählungszeichen */
+    font-weight: bold;
+}
+
+/* Hover-Effekt für Listenelemente entfernt */
+main ul li:hover {
+    background-color: transparent;
+    /* Kein Hintergrundaufleuchten */
+}
+
+/* Kein grauer Strich mehr zwischen den Aufzählungspunkten */
+main ul li {
+    border-bottom: none;
+}
+
+main ul li a {
+    color: #00796b;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Styling für den h1-container */
+.h1-container {
+    background-color: #eef9f7;
+    /* Weißer Hintergrund für den Container */
+    border-radius: 10px;
+    /* Abgerundete Ecken */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Leichter Schatten */
+    padding: 1em;
+    /* Innenabstand für etwas mehr Platz */
+    margin-bottom: 1em;
+    /* Abstand nach unten */
+    border-left: 6px solid #00796b;
+    /* Grüner Rand links */
+}
+
+.h1-container h1 {
+    font-size: 2em;
+    /* Größerer Titel */
+    color: #00796b;
+    /* Gleiche grüne Farbe wie der Rest */
+    margin-bottom: 1em;
+    /* Abstand nach unten */
+    text-align: center;
+    /* Zentriert den Titel */
+}
+
+.h1-container p,
+.h1-container ul {
+    font-size: 1.2em;
+    /* Etwas größere Schrift für den Text */
+    line-height: 1.6;
+    /* Bessere Lesbarkeit */
+}
+
+
+
+
+/* Vorteil- und Nachteil-Abschnitte nebeneinander */
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    /* Zwischenraum zwischen den Spalten */
+}
+
+.column {
+    flex: 1;
+    /* Jede Spalte nimmt gleich viel Platz ein */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2em;
+    background-color: #004d40;
+    color: white;
+    font-size: 1em;
+    margin-top: 3em;
+    border-top: 5px solid #00796b;
+}
+
+/* Weitere Geometrische Elemente im Footer */
+footer::before {
+    content: "";
+    position: absolute;
+    top: 5%;
+    left: -8%;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 193, 7, 0.2);
+    /* Gelber Kreis */
+    border-radius: 50%;
+    z-index: -1;
+}
+
+footer::after {
+    content: "";
+    position: absolute;
+    bottom: 5%;
+    right: -8%;
+    width: 180px;
+    height: 180px;
+    background-color: rgba(76, 175, 80, 0.2);
+    /* Grüner Kreis */
+    border-radius: 50%;
+    z-index: -1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    nav ul li a {
+        padding: 0.5em 1em;
+    }
+
+    main {
+        padding: 1em;
+    }
+
+    .row {
+        flex-direction: column;
+        /* Stackt die Spalten auf mobilen Geräten */
+        gap: 0;
+        /* Kein Abstand zwischen den Spalten */
+    }
+}
+
+/* Zusätzliche Anpassungen */
+body {
+    background: linear-gradient(135deg, #f0f4f8, #e1f5fe);
+    /* Sanfter Farbverlauf im Hintergrund */
+}
+
+main h1,
+main h2 {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    /* Schatten für den Text */
+}
+
+main ul li {
+    padding: 0.2em 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    /* Größerer Abstand zwischen den Listenelementen */
+}
+
+main ul li::before {
+    content: "•";
+    color: #00796b;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Mehr Geometrische Formen im Hauptbereich */
+main::before {
+    content: "";
+    position: absolute;
+    top: 15%;
+    left: -10%;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(233, 30, 99, 0.15);
+    /* Pinker Kreis */
+    border-radius: 50%;
+    z-index: -1;
+}
+
+/* Stil für die spezielle Navigationsliste mit den Klassen .three-column-list */
+.three-column-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    /* Ermöglicht das Umbrechen der Elemente */
+    justify-content: space-between;
+    /* Verteilung der Items */
+    font-style: italic;
+    /* Setzt den Text kursiv */
+}
+
+.three-column-list li {
+    display: flex;
+    align-items: center;
+    flex-basis: 30%;
+    /* Jedes Listenelement nimmt etwa 30% der Breite ein, sodass 3 Spalten entstehen */
+}
+
+/* Aufzählungszeichen durch benutzerdefinierte Symbole */
+.three-column-list li::before {
+    content: "•";
+    /* Klassisches Aufzählungszeichen */
+    color: #00796b;
+    /* Farbige Aufzählungszeichen im Grünton */
+    font-size: 1.5em;
+    /* Größeres Aufzählungszeichen */
+    font-weight: bold;
+}
+
+/* Links in der Liste dunkelgrau färben */
+.three-column-list li a {
+    color: #383535;
+    /* Dunkelgraue Farbe */
+    font-weight: normal;
+    /* Normale Schriftstärke */
+}
+
+/* Hover-Effekt für Links */
+.three-column-list li a:hover {
+    color: #5f5858;
+    /* Etwas helleres Grau bei Hover */
+    font-weight: bold;
+    /* Normale Schriftstärke */
+}
+
+.table-green {
+    border: 1px solid #00796b;
+    /* Rahmen mit grüner Farbe */
+    border-collapse: collapse;
+    /* Lässt Zellenränder zusammenfallen */
+    width: 100%;
+    /* Tabelle nimmt die gesamte Breite des Containers ein */
+    font-size: 14px;
+    /* Einheitliche Schriftgröße für die gesamte Tabelle */
+}
+
+.table-green td {
+    border: 1px solid #00796b;
+    /* Grüne Linien für jede Zelle und den Header */
+    padding: 8px;
+    /* Abstand innerhalb der Zellen */
+    text-align: left;
+    /* Text linksbündig ausrichten */
+}
+
+.font-italic {
+    font-style: italic;
+    font-size: 14px;
+    /* Einheitliche Schriftgröße */
+}
+
+.table-fit td:first-child,
+.table-fit th:first-child {
+    width: 15%;
+    /* Passen Sie den Wert nach Bedarf an, um die Spalte schmaler zu machen */
+    font-size: 16px;
+    /* Einheitliche Schriftgröße */
+}
+
+.font-li {
+    font-size: 16px;
+    /* Einheitliche Schriftgröße */
+}
+
+.white-space {
+    height: 10px;
+    /* Höhe der Linie */
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 1) 100%);
+    /* Verlauf von Weiß zu Transparent in der Mitte und zurück zu Weiß */
+    margin: 20px 0;
+    /* Abstand oben und unten */
+    border-radius: 5px;
+    /* Abgerundete Ecken */
+}
+
+
+.table-green-vertical {
+    border: 1px solid #00796b;
+    /* Rahmen mit grüner Farbe */
+    border-collapse: collapse;
+    /* Lässt Zellenränder zusammenfallen */
+    width: 100%;
+    /* Tabelle nimmt die gesamte Breite des Containers ein */
+    font-size: 14px;
+    /* Einheitliche Schriftgröße für die gesamte Tabelle */
+}
+
+.table-green-vertical td {
+    border: 1px solid #00796b;
+    /* Grüne Linien für jede Zelle und den Header */
+    padding: 8px;
+    /* Abstand innerhalb der Zellen */
+    text-align: left;
+    /* Text linksbündig ausrichten */
+}
+
+.vertical-text {
+    transform: rotate(-90deg); /* Dreht den Text um 90 Grad */
+    font-weight: bold;
+    
+}
+
+/* Responsive Design: Bei kleineren Bildschirmen wird das Layout gestapelt */
+@media (max-width: 768px) {
+    .three-column-list li {
+        flex-basis: 100%;
+        /* Stellt sicher, dass auf kleineren Geräten die Listenelemente untereinander stehen */
+        margin-bottom: 1em;
+    }
+}
+
+/* Text ausgerichtet im Blocksatz */
+.justified-text {
+    text-align: justify;
+    /* Blocksatz */
+    text-justify: inter-word;
+    /* Gleichmäßiger Abstand zwischen den Wörtern */
+    margin-top: 1em;
+    /* Optionaler Abstand */
+}
