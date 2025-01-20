@@ -463,8 +463,7 @@ main::before {
 .vertical-text {
     transform: rotate(-90deg); /* Dreht den Text um 90 Grad */
     font-weight: bold;
-    
-}
+    }
 
 /* Responsive Design: Bei kleineren Bildschirmen wird das Layout gestapelt */
 @media (max-width: 768px) {
