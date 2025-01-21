@@ -1,36 +1,280 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Objects First vs. Objects Later</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <h1>Objects First vs. Objects Later</h1>
     </header>
 
-     <!-- Navigationsmenü -->
-     <nav>
+    <!-- Navigationsmenü -->
+    <nav>
         <ul class="dropdown-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="Programmieren.html">Programmieren</a></li>
-                    <li><a href="Entwicklungsumgebungen.html">Entwicklungsumgebungen</a></li>
-                    <li><a href="Objects First vs. Objects Later.html" class="active">Objects First vs. Objects Later</a></li> <!-- Aktive Seite -->
-                    <li><a href="Didaktische Ansätze.html">Didaktische Ansätze</a></li>
-                    <li><a href="Gamification.html">Gamification</a></li>
-                    <li><a href="Boolsche Algebra.html">Boolsche Algebra</a></li>
-                    <li><a href="Scratch Unterrichtseinheit.html">Scratch Unterrichtseinheit</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Programmieren.html">Programmieren</a></li>
+            <li><a href="Entwicklungsumgebungen.html">Entwicklungsumgebungen</a></li>
+            <li><a href="Objects First vs. Objects Later.html" class="active">Objects First vs. Objects Later</a></li>
+            <!-- Aktive Seite -->
+            <li><a href="Didaktische Ansätze.html">Didaktische Ansätze</a></li>
+            <li><a href="Gamification.html">Gamification</a></li>
+            <li><a href="Boolsche Algebra.html">Boolsche Algebra</a></li>
+            <li><a href="Scratch Unterrichtseinheit.html">Scratch Unterrichtseinheit</a></li>
         </ul>
     </nav>
 
 
     <main>
-        <p>Hier entsteht meine erste Webseite mit HTML und CSS.</p>
+        <div class="h1-container">
+            <h1>Dissertation "Objects First vs. Objects Later"</h1>
+            <p><strong> Definitionen</strong>
+            <p class="justified-text">Die Dissertation
+                <a href="https://refubium.fu-berlin.de/bitstream/handle/fub188/9871/DissEhlertElektronisch2012oL.pdf?sequence=1&isAllowed=y"
+                    target="_blank" rel="noopener noreferrer" class="highlight">
+                    <em>"Objects First vs. Objects Later: Unterschiede und didaktische Ansätze"</em>
+                </a>
+                von Ehlert (2012) untersucht zwei didaktische Methoden zum Lehren der objektorientierten Programmierung
+                (OOP) im Anfangsunterricht: das OOP-First- und das OOP-Later-Vorgehen.
+            </p>
+            </p>
+
+
+            <p class="justified-text">
+            <ul>
+                <li>OOP-First: Einführung der objektorientierten Konzepte zu Beginn des Unterrichts.</li>
+                <li>OOP-Later: Vermittlung prozeduraler Programmierkonzepte vor der Einführung der objektorientierten
+                    Ansätze.</li>
+            </ul>
+            </p>
+            <p style="font-size: 20px; margin: 0%;"><strong>Forschungsfragen</strong>
+            <ol style="font-size: 20px;">
+                <li>Gibt es signifikante Unterschiede im Lernerfolg der Schülerinnen und Schüler zwischen OOP-First und
+                    OOP-Later?</li>
+                <li>Wie erleben die Lernenden den Unterricht subjektiv in Bezug auf emotionale, kognitive und
+                    motivationale
+                    Dimensionen bei den beiden Ansätzen?</li>
+            </ol>
+            </p>
+            <strong style="font-size: 20px;">Methodik</strong>
+            <p class="justified-text">Über ein Schuljahr hinweg wurden zwei 11. Klassen eines Beruflichen Gymnasiums
+                untersucht. Der
+                Lernerfolg wurde anhand von Tests zu verschiedenen Themen der OOP gemessen, darunter
+                Klassenimplementierung, Variablen, Methoden, Steuerstrukturen, Arrays, Vererbung und Assoziation. Zudem
+                wurden neun Befragungen durchgeführt, um das subjektive Erleben der Schüler in den genannten Dimensionen
+                zu erfassen.</p>
+
+            <p><strong style="font-size: 20px;">Ergebnisse</strong>
+            <ul class="justified-text">
+                <li>Lernerfolg: Es wurden Unterschiede im Lernerfolg zwischen den beiden Ansätzen festgestellt, wobei
+                    bestimmte Themen für die Schüler unterschiedlich schwierig waren.</li>
+                <li>Subjektives Erleben: Die emotionale, kognitive und motivationale Wahrnehmung des Unterrichts
+                    variierte
+                    zwischen den beiden Gruppen, was auf unterschiedliche didaktische Auswirkungen der Ansätze hinweist.
+                </li>
+            </ul>
+            </p>
+
+            <p><strong style="font-size: 20px;">Schlussfolgerungen</strong>
+            <p class="justified-text">Die Studie liefert Erkenntnisse darüber, wie die Reihenfolge der Einführung von
+                Programmierkonzepten den Lernerfolg und das subjektive Erleben der Schüler beeinflusst. Diese Ergebnisse
+                können als Grundlage für die Gestaltung des Informatikunterrichts dienen, um den Lernprozess effektiver
+                und
+                angenehmer zu gestalten.</p>
+        </div>
+        <div class="h1-container">
+            <h1>Definition und Grundprinzipien der Objektorientierung</h1>
+            <p>
+                Objektorientierung (OOP) ist ein Programmierparadigma, das die Welt durch die Modellierung von Objekten
+                abbildet. Ein Objekt kombiniert Daten (Attribute) und Verhalten (Methoden). Die wichtigsten Prinzipien
+                sind:
+
+                <li class="font-li-16"><strong>Kapselung:</strong> Daten und Methoden werden in Objekten
+                    zusammengefasst. Beispiel: Ein
+                    Auto-Objekt enthält Eigenschaften wie farbe oder geschwindigkeit und Methoden wie
+                    fahren() oder bremsen().</li>
+                <li class="font-li-16"> <strong>Vererbung: </strong> Objekte können Eigenschaften und Verhalten von
+                    anderen Objekten erben.
+                    Beispiel: Ein Objekt Elektroauto erbt von der Klasse Auto, kann aber zusätzliche Attribute wie
+                    ladezeit enthalten.</li>
+                <li class="font-li-16"> <strong>Polymorphismus:</strong> Objekte können in unterschiedlichen Kontexten
+                    unterschiedlich
+                    reagieren. Beispiel: Eine Methode starten() könnte bei einem Benzin-Auto den Motor starten, bei
+                    einem Elektroauto
+                    den Akku aktivieren.</li>
+                <li class="font-li-16"> <strong>Abstraktion:</strong> Nur relevante Details werden gezeigt, während
+                    andere versteckt
+                    bleiben.</li>
+            </p>
+            <h2>Rolle in der Programmierung</h2>
+            <p>OOP spielt eine zentrale Rolle in der modernen Softwareentwicklung, da sie hilft, komplexe Probleme durch
+                Modularisierung zu lösen. Es ermöglicht eine effiziente Wiederverwendung von Code, leichtere Wartbarkeit
+                und fördert klare Strukturen.
+                Vorteile der Objektorientierung:
+
+                <li class="font-li-16"><strong>Wiederverwendbarkeit:</strong> Klassen und Objekte können in anderen
+                    Projekten verwendet werden.</li>
+                <li class="font-li-16"><strong>Modularität:</strong> Programmteile können unabhängig voneinander
+                    entwickelt und getestet werden.</li>
+                <li class="font-li-16"><strong>Lesbarkeit:</strong> Der Code ist besser verständlich, da er reale
+                    Objekte modelliert.</li>
+                <li class="font-li-16"><strong>Skalierbarkeit:</strong> Große Programme lassen sich einfacher erweitern.
+                </li>
+            </p>
+
+        </div>
+
+        <div class="h1-container">
+            <h1>Darstellung der Ansätze <br> "Objects First" und "Objects Later"</h1>
+
+            <p class="justified-text">
+                <strong>Objects First:</strong>
+                Schüler lernen zu Beginn die grundlegenden Konzepte der OOP, wie Klassen, Objekte, Methoden und
+                Attribute. Erst
+                danach werden prozedurale Elemente wie Schleifen oder Bedingungen eingeführt. Ziel ist es, ein tiefes
+                Verständnis der
+                Objektorientierung von Anfang an zu fördern.
+            </p>
+            <p class="justified-text smaller-space">
+                <strong>Objects Later:</strong>
+                Der Unterricht beginnt mit prozeduraler Programmierung, z. B. durch die Verwendung von Funktionen,
+                Schleifen und
+                Bedingungen. OOP-Konzepte werden erst später, nach der Vermittlung dieser Grundlagen, eingeführt.
+            </p>
+
+        </div>
+
+        <div class="h1-container">
+            <h1>Vergleich und Kontrastierung der Ansätze</h1>
+            <table class="table-green">
+                <thead>
+                    <tr>
+                        <th>Kriterium</th>
+                        <th>Objects First</th>
+                        <th>Objects Later</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Startpunkt</strong></td>
+                        <td>Einführung mit Klassen und Objekten.</td>
+                        <td>Beginn mit prozeduralen Konzepten.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Zugänglichkeit</strong></td>
+                        <td>Kann für Anfänger abstrakt und komplex wirken.</td>
+                        <td>Einstieg ist oft intuitiver und praktischer.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Fokus</strong></td>
+                        <td>Starke Betonung auf Modellierung und Design.</td>
+                        <td>Funktionale Problemlösung im Vordergrund.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Lernerfolge</strong></td>
+                        <td>Fördert tiefere OOP-Kenntnisse von Beginn an.</td>
+                        <td>Schafft solide Basis für spätere OOP-Konzepte</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Gemeinsamkeiten</strong></td>
+                        <td>Beide Ansätze zielen darauf ab, Programmierkenntnisse systematisch aufzubauen.</td>
+                        <td></td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+
+        <div class="h1-container">
+            <h1>Bewertung der Vor- und Nachteile</h1>
+
+            <h2>Objects First</h2>
+            <div class="row">
+                <div class="column">
+
+                    <h3>Vorteile</h3>
+                    <ul>
+                        <li>Frühzeitiges Verständnis für OOP-Grundprinzipien.</li>
+                        <li>Fördert gutes Softwaredesign und nachhaltige Programmierfähigkeiten. </li>
+                        <li>Ideal für Schüler mit einem gewissen abstrakten Denkvermögen.</li>
+
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>Nachteile</h3>
+                    <ul>
+                        <li>Kann Anfänger überfordern, da abstrakte Konzepte früh eingeführt werden.</li>
+                        <li>Lernbarriere für Schüler ohne Programmiererfahrung.</li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+            <h2>Objects Later</h2>
+            <div class="row">
+                <div class="column">
+
+                    <h3>Vorteile</h3>
+                    <ul>
+                        <li>Schüler bauen schrittweise ein Verständnis für Programmierung auf.</li>
+                        <li>Leichterer Einstieg für Anfänger, da konkrete Anwendungen im Fokus stehen.</li>
+                        <li>Schnellere Erfolgserlebnisse durch einfache Programme.</li>
+
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>Nachteile</h3>
+                    <ul>
+                        <li>Vererbung und Polymorphismus können als Add-ons statt Kernprinzipien wahrgenommen werden.
+                        </li>
+                        <li>Übergang zur OOP kann für Schüler schwierig sein, da Denkweise geändert werden muss.</li>
+                    </ul>
+
+                </div>
+            </div>
+            <h1>Schlussfolgerung</h1>
+            <p class="justified-text">Objects First ist geeignet für Lernende mit einem starken theoretischen Zugang und
+                abstrahiertem Denkvermögen. Objects Later eignet sich besser für Schüler mit wenig Vorkenntnissen und
+                bietet einen praktischeren
+                Einstieg. Eine Kombination aus beiden Ansätzen könnte die Stärken beider Modelle
+                vereinen: Prozedurale Grundlagen werden vermittelt, bevor OOP anhand realitätsnaher Beispiele wie
+                Klassen und Objekten eingeführt wird.</p>
+
+        </div>
+
     </main>
+
+
+    <!-- Scroll-to-Top Button -->
+    <button id="scrollToTopBtn" title="Nach oben scrollen">↑</button>
+
+    <script>
+        // JavaScript für den Scroll-to-Top-Button
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+        // Button anzeigen/verstecken
+        window.onscroll = function () {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        };
+
+        // Nach oben scrollen
+        scrollToTopBtn.onclick = function () {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        };
+    </script>
     <footer>
         <p>&copy; 2025 Larissa Kazungu-Igumba</p>
     </footer>
 </body>
+
 </html>

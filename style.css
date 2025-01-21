@@ -389,6 +389,23 @@ main::before {
     /* Normale Schriftstärke */
 }
 
+/* Standardstil für hervorgehobene Links */
+a.highlight {
+    color: #383535;
+    /* Dunkelgraue Farbe */
+    font-weight: normal;
+    /* Normale Schriftstärke */
+    text-decoration: none;
+    /* Entfernt die Unterstreichung, falls gewünscht */
+}
+
+/* Hover-Stil für hervorgehobene Links */
+a.highlight:hover {
+    color: #00796b;
+    /* Etwas helleres Grau bei Hover */
+}
+
+
 .table-green {
     border: 1px solid #00796b;
     /* Rahmen mit grüner Farbe */
@@ -423,9 +440,24 @@ main::before {
     /* Einheitliche Schriftgröße */
 }
 
-.font-li {
+.font-li-16 {
     font-size: 16px;
     /* Einheitliche Schriftgröße */
+}
+
+.font-li-18 {
+    font-size: 18px;
+    /* Einheitliche Schriftgröße */
+}
+
+.font-li-20 {
+    font-size: 20px;
+    /* Einheitliche Schriftgröße */
+}
+
+.smaller-space {
+    margin-top: 5px;
+    /* Abstand verkleinern */
 }
 
 .white-space {
@@ -438,6 +470,45 @@ main::before {
     border-radius: 5px;
     /* Abgerundete Ecken */
 }
+
+.dashed-list {
+    list-style-type: none;
+    /* Entfernt Standard-Aufzählungszeichen */
+    padding-left: 0;
+    /* Entfernt den Standardabstand der Liste */
+}
+
+.dashed-list li {
+    font-size: 16px;
+    /* Schriftgröße für die Listeneinträge */
+}
+
+.dashed-list li::before {
+    content: "- ";
+    /* Bindestrich als Aufzählungszeichen */
+    font-size: 16px;
+    /* Setzt die Schriftgröße des Bindestrichs */
+}
+
+.bold-number-list {
+    list-style-type: decimal;
+    /* Verwendet nummerierte Liste */
+}
+
+.bold-number-list li::marker {
+    font-weight: bold;
+    /* Macht die Nummern fett */
+}
+
+.gamification-image {
+    max-width: 100%;
+    /* Bild an die Breite des Containers anpassen */
+    height: auto;
+    /* Höhe automatisch anpassen, um das Seitenverhältnis zu bewahren */
+    padding: 5px;
+    /* Beispiel: Abstand innerhalb des Rands */
+}
+
 
 
 .table-green-vertical {
@@ -461,9 +532,10 @@ main::before {
 }
 
 .vertical-text {
-    transform: rotate(-90deg); /* Dreht den Text um 90 Grad */
+    transform: rotate(-90deg);
+    /* Dreht den Text um 90 Grad */
     font-weight: bold;
-    }
+}
 
 /* Responsive Design: Bei kleineren Bildschirmen wird das Layout gestapelt */
 @media (max-width: 768px) {
@@ -482,4 +554,27 @@ main::before {
     /* Gleichmäßiger Abstand zwischen den Wörtern */
     margin-top: 1em;
     /* Optionaler Abstand */
+}
+
+#scrollToTopBtn {
+    display: none;
+    /* Anfangs unsichtbar */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    /* Über andere Elemente legen */
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #45a049;
 }

@@ -1,36 +1,191 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Didaktische Ansätze</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <h1>Didaktische Ansätze</h1>
     </header>
 
-     <!-- Navigationsmenü -->
-     <nav>
+    <!-- Navigationsmenü -->
+    <nav>
         <ul class="dropdown-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="Programmieren.html">Programmieren</a></li>
-                    <li><a href="Entwicklungsumgebungen.html">Entwicklungsumgebungen</a></li>
-                    <li><a href="Objects First vs. Objects Later.html">Objects First vs. Objects Later</a></li>
-                    <li><a href="Didaktische Ansätze.html" class="active">Didaktische Ansätze</a></li> <!-- Aktive Seite -->
-                    <li><a href="Gamification.html">Gamification</a></li>
-                    <li><a href="Boolsche Algebra.html">Boolsche Algebra</a></li>
-                    <li><a href="Scratch Unterrichtseinheit.html">Scratch Unterrichtseinheit</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Programmieren.html">Programmieren</a></li>
+            <li><a href="Entwicklungsumgebungen.html">Entwicklungsumgebungen</a></li>
+            <li><a href="Objects First vs. Objects Later.html">Objects First vs. Objects Later</a></li>
+            <li><a href="Didaktische Ansätze.html" class="active">Didaktische Ansätze</a></li> <!-- Aktive Seite -->
+            <li><a href="Gamification.html">Gamification</a></li>
+            <li><a href="Boolsche Algebra.html">Boolsche Algebra</a></li>
+            <li><a href="Scratch Unterrichtseinheit.html">Scratch Unterrichtseinheit</a></li>
         </ul>
     </nav>
 
 
     <main>
-        <p>Hier entsteht meine erste Webseite mit HTML und CSS.</p>
+        <div class="h1-container">
+            <h1>Didaktische Ansätze zum Programmierenlernen</h1>
+
+            <h2>Lernen mit Lösungsbeispielen</h2>
+            <p class="justified-text">Das Lernen mit Lösungsbeispielen basiert auf dem Prinzip der kognitiven
+                Meisterlehre, bei der der Lehrende zunächst den Lösungsprozess modelliert und erklärt. Lernende
+                übernehmen dann schrittweise Verantwortung, bis sie selbstständig arbeiten können.
+            <ul>
+                <li>Ziel: Lernende sollen Konzepte verstehen, abstrahieren und auf neue Probleme übertragen können.</li>
+                <li>Anwendung: Typisch sind Vervollständigungsaufgaben, bei denen Schüler unvollständigen Code ergänzen,
+                    debuggen und erweitern.</li>
+            </ul>
+            </p>
+            <h2>Didaktische Modelle nach Van Merrienboer</h2>
+            <p>Van Merrienboer beschreibt drei Herangehensweisen zum Programmierenlernen:
+            <ul>
+                <li>Leseansatz: Analyse und Modifikation bestehender Programme, Debugging und Erweiterung. Eigene
+                    Programme werden erst später erstellt.</li>
+                <li>Expertenansatz: Lernende arbeiten an komplexen Projekten, bei denen sie das benötigte Wissen
+                    sukzessive erwerben.</li>
+                <li>Spiralansatz: Schrittweiser Aufbau von Kenntnissen durch kleinere Aufgaben mit zunehmender
+                    Komplexität.</li>
+            </ul>
+            </p>
+
+            <h2>Programmieren als Prozess</h2>
+            <p class="justified-text">Programmieren wird als inkrementeller, explorativer Prozess verstanden, der
+                folgende Kernkompetenzen erfordert (Du Boulay, 1989):
+            <ol>
+                <li>Verständnis für Programme und ihre Funktion.</li>
+                <li>Modell des Computers („notational machine“).</li>
+                <li>Syntax und Semantik der Programmiersprache.</li>
+                <li>Problemlösungsstrategien und algorithmische Patterns.</li>
+                <li>Praktische Fähigkeiten (Planen, Implementieren, Testen, Debugging).</li>
+            </ol>
+
+            </p>
+
+            <h2>Live-Coding als didaktischer Ansatz</h2>
+            <p>Live-Coding bietet die Möglichkeit, den Programmierprozess sichtbar und interaktiv zu gestalten:
+                <li>Vorgehen: Der Lehrende schreibt Code live und denkt laut, um Denkprozesse zu verdeutlichen.</li>
+                <li>Variante: Participatory Live-Coding, bei dem Lernende während der Live-Session selbst aktiv
+                    mitarbeiten.</li>
+            </p>
+
+            <p><strong>Vorteile</strong></p>
+            <li>Sichtbarkeit des Prozesses, inkl. Debugging und schrittweiser Entwicklung.</li>
+            <li>Vermittlung von guten Programmierpraktiken (z. B. kontinuierliches Testen und Refaktorieren).</li>
+
+
+            <p><strong>Ziel</strong></p>
+            <p class="justified-text">Die Lernenden erkennen, dass Code schrittweise entsteht und Debugging ein
+                essenzieller
+                Bestandteil des Programmierprozesses ist.</p>
+
+        </div>
+        <div class="h1-container">
+            <h1>Reflexion und Bewertung der Ansätze</h1>
+            <h2>Vergleich der Ansätze</h2>
+
+            <table class="table-green">
+                <thead>
+                    <tr>
+                        <th>Kriterium</th>
+                        <th>Lernen mit Lösungsbeispielen</th>
+                        <th>Leseansatz</th>
+                        <th>Expertenansatz</th>
+                        <th>Spiralansatz</th>
+                        <th>Live-Coding</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Zielgruppe</strong></td>
+                        <td>Anfänger und Fortgeschrittene</td>
+                        <td>Anfänger</td>
+                        <td>Fortgeschrittene</td>
+                        <td>Anfänger</td>
+                        <td>Anfänger und Fortgeschrittene</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Praktikabilität</strong></td>
+                        <td>Gut umsetzbar, da Beispiele konkret sind</td>
+                        <td>Einsteigerfreundlich</td>
+                        <td>Motivation durch Projekte</td>
+                        <td>Progressiver Wissensaufbau</td>
+                        <td>Reale Simulation des Prozesses</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Motivation</strong></td>
+                        <td>Gering bei rein passivem Lernen</td>
+                        <td>Gut durch Interaktion</td>
+                        <td>Hoch durch Projektbezug</td>
+                        <td>Mittel, abhängig von Aufgaben</td>
+                        <td>Hoch durch aktive Teilnahme</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Lernerfolg</strong></td>
+                        <td>Hoch bei gut strukturierten Beispielen</td>
+                        <td>Moderat, erfordert Reflexion</td>
+                        <td>Hoch durch Anwendung</td>
+                        <td>Gut durch kleinschrittiges Lernen</td>
+                        <td>Hoch durch Prozesssichtbarkeit</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+            <h2>Stärken und Schwächen der Ansätze</h2>
+            <p>
+                <li>Lösungsbeispiele: Fördern Transferdenken, können aber passives Lernen begünstigen.</li>
+                <li>Leseansatz: Gut für Syntaxverständnis, jedoch fehlende Kreativität bei eigenen Projekten.</li>
+                <li>Expertenansatz: Hohe Motivation, aber Überforderung durch Komplexität möglich.</li>
+                <li>Spiralansatz: Guter Wissensaufbau, aber zeitintensiv.</li>
+                <li>Live-Coding: Veranschaulicht den Prozess, aber abhängig von der Kompetenz des Lehrenden.</li>
+            </p>
+        </div>
+
+        <div class="h1-container">
+            <h1>Empfehlung</h1>
+            <p class="justified-text">Die Kombination mehrerer Ansätze ist ideal, da unterschiedliche Lernphasen und
+                Lernstile angesprochen werden:
+                <li class="font-li-18">Einstieg: Spiralansatz oder Leseansatz.</li>
+                <li class="font-li-18">Vertiefung: Lösungsbeispiele und Live-Coding.</li>
+                <li class="font-li-18">Anwendung: Expertenansatz für projektbasiertes Lernen.</li>
+            <p class="justified-text font-li-18">Live-Coding eignet sich besonders gut zur Einführung komplexer
+                Prozesse, da es den explorativen und
+                iterativen Charakter des Programmierens erlebbar macht.</p>
+            </p>
+        </div>
     </main>
+
+    <!-- Scroll-to-Top Button -->
+    <button id="scrollToTopBtn" title="Nach oben scrollen">↑</button>
+
+    <script>
+        // JavaScript für den Scroll-to-Top-Button
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+        // Button anzeigen/verstecken
+        window.onscroll = function () {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        };
+
+        // Nach oben scrollen
+        scrollToTopBtn.onclick = function () {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        };
+    </script>
+
     <footer>
         <p>&copy; 2025 Larissa Kazungu-Igumba</p>
     </footer>
 </body>
+
 </html>
