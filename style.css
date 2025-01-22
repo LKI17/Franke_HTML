@@ -1,3 +1,19 @@
+/* Standardstil für hervorgehobene Links */
+a.highlight {
+    color: #383535;
+    /* Dunkelgraue Farbe */
+    font-weight: normal;
+    /* Normale Schriftstärke */
+    text-decoration: none;
+    /* Entfernt die Unterstreichung, falls gewünscht */
+}
+
+/* Hover-Stil für hervorgehobene Links */
+a.highlight:hover {
+    color: #00796b;
+    /* Etwas helleres Grau bei Hover */
+}
+
 /* Allgemeine Einstellungen */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -11,233 +27,12 @@ body {
     /* Leichtes Muster im Hintergrund */
 }
 
-/* Header */
-header {
-    background-color: #00796b;
-    /* Warmer Grünton */
-    color: white;
-    text-align: center;
-    padding: 1.5em 1.5em;
-    /* Mehr Abstand für ein luftiges Design */
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-    /* Etwas stärkeren Schatten */
-    border-bottom: 5px solid #004d40;
-    /* Dunklerer Rand unten für mehr Kontrast */
-    position: relative;
+/* Zusätzliche Anpassungen */
+body {
+    background: linear-gradient(135deg, #f0f4f8, #e1f5fe);
+    /* Sanfter Farbverlauf im Hintergrund */
 }
 
-/* Geometrische Kreise im Header */
-header::before {
-    content: "";
-    position: absolute;
-    top: 10%;
-    left: -10%;
-    width: 250px;
-    height: 250px;
-    background-color: rgba(255, 87, 34, 0.2);
-    /* Orange Kreis */
-    border-radius: 50%;
-    z-index: -1;
-}
-
-header::after {
-    content: "";
-    position: absolute;
-    bottom: 10%;
-    right: -10%;
-    width: 180px;
-    height: 180px;
-    background-color: rgba(33, 150, 243, 0.2);
-    /* Blau Kreis */
-    border-radius: 50%;
-    z-index: -1;
-}
-
-/* Navigation */
-nav {
-    background-color: #004d40;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 1.5em;
-}
-
-nav ul li {
-    position: relative;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    padding: 1.2em;
-    display: block;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-nav ul li a:hover {
-    background-color: #00897b;
-    border-radius: 6px;
-    transform: scale(1.05);
-    /* Vergrößerung beim Hover für mehr Interaktivität */
-}
-
-/* Aktiver Menüpunkt */
-nav ul li a.active {
-    background-color: #00796b;
-    /* Dunkler Grünton für den aktiven Menüpunkt */
-    color: white;
-    /* Weißer Text */
-    font-weight: bold;
-    /* Fetter Text */
-    border-radius: 6px;
-    /* Abgerundete Ecken für den aktiven Link */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Leichter Schatten */
-    transform: scale(1.05);
-    /* Vergrößern beim aktiven Link */
-}
-
-/* Hauptbereich */
-main {
-    padding: 1.5em;
-    max-width: 1000px;
-    margin: 0 auto;
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    position: relative;
-}
-
-/* Weitere Geometrische Muster im Hintergrund */
-main::before {
-    content: "";
-    position: absolute;
-    top: 10%;
-    left: -15%;
-    width: 300px;
-    height: 300px;
-    background-color: rgba(0, 123, 255, 0.2);
-    /* Blauer Kreis */
-    border-radius: 50%;
-    z-index: -1;
-}
-
-main::after {
-    content: "";
-    position: absolute;
-    bottom: 10%;
-    right: -10%;
-    width: 250px;
-    height: 250px;
-    background-color: rgba(33, 150, 243, 0.2);
-    /* Blauer Kreis (angepasst) */
-    border-radius: 50%;
-    z-index: -1;
-}
-
-/* Listenelemente im Hauptbereich */
-main ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-main ul li {
-    padding: 0.4em 0;
-    /* Reduzierter Abstand zwischen den Elementen */
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    /* Abstand zwischen Aufzählungszeichen und Text */
-    transition: background-color 0.3s ease;
-}
-
-/* Aufzählungszeichen durch benutzerdefinierte Symbole */
-main ul li::before {
-    content: "•";
-    /* Klassisches Aufzählungszeichen, kann durch andere Zeichen oder Icons ersetzt werden */
-    color: #00796b;
-    /* Farbige Aufzählungszeichen im Grünton */
-    font-size: 1.5em;
-    /* Größeres Aufzählungszeichen */
-    font-weight: bold;
-}
-
-/* Hover-Effekt für Listenelemente entfernt */
-main ul li:hover {
-    background-color: transparent;
-    /* Kein Hintergrundaufleuchten */
-}
-
-/* Kein grauer Strich mehr zwischen den Aufzählungspunkten */
-main ul li {
-    border-bottom: none;
-}
-
-main ul li a {
-    color: #00796b;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-/* Styling für den h1-container */
-.h1-container {
-    background-color: #eef9f7;
-    /* Weißer Hintergrund für den Container */
-    border-radius: 10px;
-    /* Abgerundete Ecken */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Leichter Schatten */
-    padding: 1em;
-    /* Innenabstand für etwas mehr Platz */
-    margin-bottom: 1em;
-    /* Abstand nach unten */
-    border-left: 6px solid #00796b;
-    /* Grüner Rand links */
-}
-
-.h1-container h1 {
-    font-size: 2em;
-    /* Größerer Titel */
-    color: #00796b;
-    /* Gleiche grüne Farbe wie der Rest */
-    margin-bottom: 1em;
-    /* Abstand nach unten */
-    text-align: center;
-    /* Zentriert den Titel */
-}
-
-.h1-container p,
-.h1-container ul {
-    font-size: 1.2em;
-    /* Etwas größere Schrift für den Text */
-    line-height: 1.6;
-    /* Bessere Lesbarkeit */
-}
-
-
-
-
-/* Vorteil- und Nachteil-Abschnitte nebeneinander */
-.row {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    /* Zwischenraum zwischen den Spalten */
-}
-
-.column {
-    flex: 1;
-    /* Jede Spalte nimmt gleich viel Platz ein */
-}
 
 /* Footer */
 footer {
@@ -277,34 +72,135 @@ footer::after {
     z-index: -1;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        gap: 0;
-    }
-
-    nav ul li a {
-        padding: 0.5em 1em;
-    }
-
-    main {
-        padding: 1em;
-    }
-
-    .row {
-        flex-direction: column;
-        /* Stackt die Spalten auf mobilen Geräten */
-        gap: 0;
-        /* Kein Abstand zwischen den Spalten */
-    }
+/* Header */
+header {
+    background-color: #00796b;
+    /* Warmer Grünton */
+    color: white;
+    text-align: center;
+    padding: 1.5em 1.5em;
+    /* Mehr Abstand für ein luftiges Design */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    /* Etwas stärkeren Schatten */
+    border-bottom: 5px solid #004d40;
+    /* Dunklerer Rand unten für mehr Kontrast */
+    position: relative;
 }
 
-/* Zusätzliche Anpassungen */
-body {
-    background: linear-gradient(135deg, #f0f4f8, #e1f5fe);
-    /* Sanfter Farbverlauf im Hintergrund */
+header::after {
+    content: "";
+    position: absolute;
+    bottom: 10%;
+    right: -10%;
+    width: 180px;
+    height: 180px;
+    background-color: rgba(33, 150, 243, 0.2);
+    /* Blau Kreis */
+    border-radius: 50%;
+    z-index: -1;
 }
+
+/* Geometrische Kreise im Header */
+header::before {
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: -10%;
+    width: 250px;
+    height: 250px;
+    background-color: rgba(255, 87, 34, 0.2);
+    /* Orange Kreis */
+    border-radius: 50%;
+    z-index: -1;
+}
+
+/* Hauptbereich */
+main {
+    padding: 1.5em;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+main::after {
+    content: "";
+    position: absolute;
+    bottom: 10%;
+    right: -10%;
+    width: 250px;
+    height: 250px;
+    background-color: rgba(33, 150, 243, 0.2);
+    /* Blauer Kreis (angepasst) */
+    border-radius: 50%;
+    z-index: -1;
+}
+
+/* Weitere Geometrische Muster im Hintergrund */
+main::before {
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: -15%;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(0, 123, 255, 0.2);
+    /* Blauer Kreis */
+    border-radius: 50%;
+    z-index: -1;
+}
+
+
+
+/* Listenelemente im Hauptbereich */
+main ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+main ul li {
+    padding: 0.4em 0;
+    /* Reduzierter Abstand zwischen den Elementen */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Abstand zwischen Aufzählungszeichen und Text */
+    transition: background-color 0.3s ease;
+}
+
+/* Kein grauer Strich mehr zwischen den Aufzählungspunkten */
+main ul li {
+    border-bottom: none;
+}
+
+main ul li a {
+    color: #00796b;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Aufzählungszeichen durch benutzerdefinierte Symbole */
+main ul li::before {
+    content: "•";
+    /* Klassisches Aufzählungszeichen, kann durch andere Zeichen oder Icons ersetzt werden */
+    color: #00796b;
+    /* Farbige Aufzählungszeichen im Grünton */
+    font-size: 1.5em;
+    /* Größeres Aufzählungszeichen */
+    font-weight: bold;
+}
+
+/* Hover-Effekt für Listenelemente entfernt */
+main ul li:hover {
+    background-color: transparent;
+    /* Kein Hintergrundaufleuchten */
+}
+
 
 main h1,
 main h2 {
@@ -339,6 +235,244 @@ main::before {
     /* Pinker Kreis */
     border-radius: 50%;
     z-index: -1;
+}
+
+/* Navigation */
+nav {
+    background-color: #004d40;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 1.2em;
+    display: block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Aktiver Menüpunkt */
+nav ul li a.active {
+    background-color: #00796b;
+    /* Dunkler Grünton für den aktiven Menüpunkt */
+    color: white;
+    /* Weißer Text */
+    font-weight: bold;
+    /* Fetter Text */
+    border-radius: 6px;
+    /* Abgerundete Ecken für den aktiven Link */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Leichter Schatten */
+    transform: scale(1.05);
+    /* Vergrößern beim aktiven Link */
+}
+
+nav ul li a:hover {
+    background-color: #00897b;
+    border-radius: 6px;
+    transform: scale(1.05);
+    /* Vergrößerung beim Hover für mehr Interaktivität */
+}
+
+
+
+.bold-number-list {
+    list-style-type: decimal;
+    /* Verwendet nummerierte Liste */
+}
+
+.bold-number-list li::marker {
+    font-weight: bold;
+    /* Macht die Nummern fett */
+}
+
+.center-text-green{
+    text-align: center;
+    color: #00796b;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.column {
+    flex: 1;
+    /* Jede Spalte nimmt gleich viel Platz ein */
+}
+
+.dashed-list {
+    list-style-type: none;
+    /* Entfernt Standard-Aufzählungszeichen */
+    padding-left: 0;
+    /* Entfernt den Standardabstand der Liste */
+}
+
+.dashed-list li {
+    font-size: 16px;
+    /* Schriftgröße für die Listeneinträge */
+}
+
+.dashed-list li::before {
+    content: "- ";
+    /* Bindestrich als Aufzählungszeichen */
+    font-size: 16px;
+    /* Setzt die Schriftgröße des Bindestrichs */
+}
+
+.font-italic {
+    font-style: italic;
+    font-size: 14px;
+    /* Einheitliche Schriftgröße */
+}
+
+.font-li-16 {
+    font-size: 16px;
+    /* Einheitliche Schriftgröße */
+}
+
+.font-li-18 {
+    font-size: 18px;
+    /* Einheitliche Schriftgröße */
+}
+
+.font-li-20 {
+    font-size: 20px;
+    /* Einheitliche Schriftgröße */
+}
+
+.gamification-image {
+    max-width: 100%;
+    /* Bild an die Breite des Containers anpassen */
+    height: auto;
+    /* Höhe automatisch anpassen, um das Seitenverhältnis zu bewahren */
+    padding: 5px;
+    /* Beispiel: Abstand innerhalb des Rands */
+}
+
+.GD-img {
+    max-width: 100%;
+    /* Bild an die Breite des Containers anpassen */
+    height: auto;
+    /* Höhe automatisch anpassen, um das Seitenverhältnis zu bewahren */
+    padding: 5px;
+    /* Beispiel: Abstand innerhalb des Rands */
+}
+/* Styling für den h1-container */
+.h1-container {
+    background-color: #eef9f7;
+    /* Weißer Hintergrund für den Container */
+    border-radius: 10px;
+    /* Abgerundete Ecken */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Leichter Schatten */
+    padding: 1em;
+    /* Innenabstand für etwas mehr Platz */
+    margin-bottom: 1em;
+    /* Abstand nach unten */
+    border-left: 6px solid #00796b;
+    /* Grüner Rand links */
+}
+
+.h1-container h1 {
+    font-size: 2em;
+    /* Größerer Titel */
+    color: #00796b;
+    /* Gleiche grüne Farbe wie der Rest */
+    margin-bottom: 1em;
+    /* Abstand nach unten */
+    text-align: center;
+    /* Zentriert den Titel */
+}
+
+.h1-container p,
+.h1-container ul {
+    font-size: 1.2em;
+    /* Etwas größere Schrift für den Text */
+    line-height: 1.6;
+    /* Bessere Lesbarkeit */
+}
+
+/* Text ausgerichtet im Blocksatz */
+.justified-text {
+    text-align: justify;
+    /* Blocksatz */
+    text-justify: inter-word;
+    /* Gleichmäßiger Abstand zwischen den Wörtern */
+    margin-top: 1em;
+    /* Optionaler Abstand */
+}
+
+
+/* Vorteil- und Nachteil-Abschnitte nebeneinander */
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    /* Zwischenraum zwischen den Spalten */
+}
+
+.smaller-space {
+    margin-top: 5px;
+    /* Abstand verkleinern */
+}
+
+.table-fit td:first-child,
+.table-fit th:first-child {
+    width: 15%;
+    /* Passen Sie den Wert nach Bedarf an, um die Spalte schmaler zu machen */
+    font-size: 16px;
+    /* Einheitliche Schriftgröße */
+}
+
+.table-green {
+    border: 1px solid #00796b;
+    /* Rahmen mit grüner Farbe */
+    border-collapse: collapse;
+    /* Lässt Zellenränder zusammenfallen */
+    width: 100%;
+    /* Tabelle nimmt die gesamte Breite des Containers ein */
+    font-size: 14px;
+    /* Einheitliche Schriftgröße für die gesamte Tabelle */
+}
+
+.table-green-vertical {
+    border: 1px solid #00796b;
+    /* Rahmen mit grüner Farbe */
+    border-collapse: collapse;
+    /* Lässt Zellenränder zusammenfallen */
+    width: 100%;
+    /* Tabelle nimmt die gesamte Breite des Containers ein */
+    font-size: 14px;
+    /* Einheitliche Schriftgröße für die gesamte Tabelle */
+}
+
+.table-green-vertical td {
+    border: 1px solid #00796b;
+    /* Grüne Linien für jede Zelle und den Header */
+    padding: 8px;
+    /* Abstand innerhalb der Zellen */
+    text-align: left;
+    /* Text linksbündig ausrichten */
+}
+
+.table-green td {
+    border: 1px solid #00796b;
+    /* Grüne Linien für jede Zelle und den Header */
+    padding: 8px;
+    /* Abstand innerhalb der Zellen */
+    text-align: left;
+    /* Text linksbündig ausrichten */
 }
 
 /* Stil für die spezielle Navigationsliste mit den Klassen .three-column-list */
@@ -389,77 +523,6 @@ main::before {
     /* Normale Schriftstärke */
 }
 
-/* Standardstil für hervorgehobene Links */
-a.highlight {
-    color: #383535;
-    /* Dunkelgraue Farbe */
-    font-weight: normal;
-    /* Normale Schriftstärke */
-    text-decoration: none;
-    /* Entfernt die Unterstreichung, falls gewünscht */
-}
-
-/* Hover-Stil für hervorgehobene Links */
-a.highlight:hover {
-    color: #00796b;
-    /* Etwas helleres Grau bei Hover */
-}
-
-
-.table-green {
-    border: 1px solid #00796b;
-    /* Rahmen mit grüner Farbe */
-    border-collapse: collapse;
-    /* Lässt Zellenränder zusammenfallen */
-    width: 100%;
-    /* Tabelle nimmt die gesamte Breite des Containers ein */
-    font-size: 14px;
-    /* Einheitliche Schriftgröße für die gesamte Tabelle */
-}
-
-.table-green td {
-    border: 1px solid #00796b;
-    /* Grüne Linien für jede Zelle und den Header */
-    padding: 8px;
-    /* Abstand innerhalb der Zellen */
-    text-align: left;
-    /* Text linksbündig ausrichten */
-}
-
-.font-italic {
-    font-style: italic;
-    font-size: 14px;
-    /* Einheitliche Schriftgröße */
-}
-
-.table-fit td:first-child,
-.table-fit th:first-child {
-    width: 15%;
-    /* Passen Sie den Wert nach Bedarf an, um die Spalte schmaler zu machen */
-    font-size: 16px;
-    /* Einheitliche Schriftgröße */
-}
-
-.font-li-16 {
-    font-size: 16px;
-    /* Einheitliche Schriftgröße */
-}
-
-.font-li-18 {
-    font-size: 18px;
-    /* Einheitliche Schriftgröße */
-}
-
-.font-li-20 {
-    font-size: 20px;
-    /* Einheitliche Schriftgröße */
-}
-
-.smaller-space {
-    margin-top: 5px;
-    /* Abstand verkleinern */
-}
-
 .white-space {
     height: 10px;
     /* Höhe der Linie */
@@ -471,89 +534,10 @@ a.highlight:hover {
     /* Abgerundete Ecken */
 }
 
-.dashed-list {
-    list-style-type: none;
-    /* Entfernt Standard-Aufzählungszeichen */
-    padding-left: 0;
-    /* Entfernt den Standardabstand der Liste */
-}
-
-.dashed-list li {
-    font-size: 16px;
-    /* Schriftgröße für die Listeneinträge */
-}
-
-.dashed-list li::before {
-    content: "- ";
-    /* Bindestrich als Aufzählungszeichen */
-    font-size: 16px;
-    /* Setzt die Schriftgröße des Bindestrichs */
-}
-
-.bold-number-list {
-    list-style-type: decimal;
-    /* Verwendet nummerierte Liste */
-}
-
-.bold-number-list li::marker {
-    font-weight: bold;
-    /* Macht die Nummern fett */
-}
-
-.gamification-image {
-    max-width: 100%;
-    /* Bild an die Breite des Containers anpassen */
-    height: auto;
-    /* Höhe automatisch anpassen, um das Seitenverhältnis zu bewahren */
-    padding: 5px;
-    /* Beispiel: Abstand innerhalb des Rands */
-}
-
-
-
-.table-green-vertical {
-    border: 1px solid #00796b;
-    /* Rahmen mit grüner Farbe */
-    border-collapse: collapse;
-    /* Lässt Zellenränder zusammenfallen */
-    width: 100%;
-    /* Tabelle nimmt die gesamte Breite des Containers ein */
-    font-size: 14px;
-    /* Einheitliche Schriftgröße für die gesamte Tabelle */
-}
-
-.table-green-vertical td {
-    border: 1px solid #00796b;
-    /* Grüne Linien für jede Zelle und den Header */
-    padding: 8px;
-    /* Abstand innerhalb der Zellen */
-    text-align: left;
-    /* Text linksbündig ausrichten */
-}
-
 .vertical-text {
     transform: rotate(-90deg);
     /* Dreht den Text um 90 Grad */
     font-weight: bold;
-}
-
-/* Responsive Design: Bei kleineren Bildschirmen wird das Layout gestapelt */
-@media (max-width: 768px) {
-    .three-column-list li {
-        flex-basis: 100%;
-        /* Stellt sicher, dass auf kleineren Geräten die Listenelemente untereinander stehen */
-        margin-bottom: 1em;
-    }
-}
-
-/* Text ausgerichtet im Blocksatz */
-.justified-text {
-    text-align: justify;
-    /* Blocksatz */
-    text-justify: inter-word;
-    /* Gleichmäßiger Abstand zwischen den Wörtern */
-    margin-top: 1em;
-    /* Optionaler Abstand */
 }
 
 #scrollToTopBtn {
@@ -577,4 +561,36 @@ a.highlight:hover {
 
 #scrollToTopBtn:hover {
     background-color: #45a049;
+}
+
+/* Responsive Design: Bei kleineren Bildschirmen wird das Layout gestapelt */
+@media (max-width: 768px) {
+    .three-column-list li {
+        flex-basis: 100%;
+        /* Stellt sicher, dass auf kleineren Geräten die Listenelemente untereinander stehen */
+        margin-bottom: 1em;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    nav ul li a {
+        padding: 0.5em 1em;
+    }
+
+    main {
+        padding: 1em;
+    }
+
+    .row {
+        flex-direction: column;
+        /* Stackt die Spalten auf mobilen Geräten */
+        gap: 0;
+        /* Kein Abstand zwischen den Spalten */
+    }
 }

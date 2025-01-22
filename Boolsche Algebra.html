@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boolsche Algebra</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <h1>Boolsche Algebra</h1>
@@ -14,45 +16,369 @@
     <!-- Navigationsmenü -->
     <nav>
         <ul class="dropdown-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="Programmieren.html">Programmieren</a></li>
-                    <li><a href="Entwicklungsumgebungen.html">Entwicklungsumgebungen</a></li>
-                    <li><a href="Objects First vs. Objects Later.html">Objects First vs. Objects Later</a></li>
-                    <li><a href="Didaktische Ansätze.html">Didaktische Ansätze</a></li>
-                    <li><a href="Gamification.html">Gamification</a></li>
-                    <li><a href="Boolsche Algebra.html" class="active">Boolsche Algebra</a></li> <!-- Aktive Seite -->
-                    <li><a href="Scratch Unterrichtseinheit.html">Scratch Unterrichtseinheit</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Programmieren.html">Programmieren</a></li>
+            <li><a href="Entwicklungsumgebungen.html">Entwicklungsumgebungen</a></li>
+            <li><a href="Objects First vs. Objects Later.html">Objects First vs. Objects Later</a></li>
+            <li><a href="Didaktische Ansätze.html">Didaktische Ansätze</a></li>
+            <li><a href="Gamification.html">Gamification</a></li>
+            <li><a href="Boolsche Algebra.html" class="active">Boolsche Algebra</a></li> <!-- Aktive Seite -->
+            <li><a href="Scratch Unterrichtseinheit.html">Scratch Unterrichtseinheit</a></li>
         </ul>
     </nav>
 
     <main>
-        <p>Hier entsteht meine erste Webseite mit HTML und CSS.</p>
+
+        <div class="h1-container">
+            <h1>Boolsche Algebra</h1>
+            <h2>Einführung in die Boolsche Algebra</h2>
+            <p class="justified-text">Die Boolsche Algebra ist ein Teilgebiet der Mathematik, das sich mit der
+                Verarbeitung von Wahrheitswerten beschäftigt. Sie wurde von George Boole entwickelt und bildet die
+                Grundlage der digitalen Schaltungstechnik sowie der Informatik.
+                In der Boolschen Algebra gibt es nur zwei mögliche Werte: wahr (1) und falsch (0). Die grundlegenden
+                Operationen sind: </p>
+            <li class="font-li-18"><strong>UND (AND):</strong> Liefert nur dann 1, wenn beide Operanden 1 sind.</li>
+            <li class="font-li-18"><strong>ODER (OR):</strong> Liefert 1, wenn mindestens einer der Operanden 1 ist.
+            </li>
+            <li class="font-li-18"><strong>NICHT (NOT): </strong>Invertiert den Wert, d. h., aus 1 wird 0 und aus 0 wird
+                1.</li>
+            <p class="justified-text">Die Boolsche Algebra wird häufig verwendet, um logische Ausdrücke zu
+                beschreiben und in logische Schaltungen umzusetzen, wie beispielsweise in Computern, Steuerungssystemen
+                und
+                digitalen Geräten.</p>
+        </div>
+        <div class="h1-container">
+            <h1>Aufgaben</h1>
+            <p>Die Aufgaben werden mit Hilfe des <a href="https://academo.org/demos/logic-gate-simulator/"
+                    target="_blank" rel="noopener noreferrer" class="highlight"> Logic Gate Simulators</a> bearbeitet.
+            </p>
+
+            <ol class="bold-number-list">
+                <li> <strong>Erstellen Sie eine Schaltung im Simulator, die zwei Eingangsvariablen verwendet und den
+                        AND-Operator implementiert. Überprüfen Sie, ob das Ergebnis nur dann wahr ist, wenn beide
+                        Eingänge
+                        wahr sind.</strong></li>
+            </ol>
+            <h4>Schaltung erstellen</h4>
+            <li>Es werden zwei Eingänge (Inputs) auf der Arbeitsfläche platziert.</li>
+            <li>Ein AND-Gatter wird auf die Arbeitsfläche gezogen.</li>
+            <li>Die beiden Eingänge werden mit den Eingängen des AND-Gatters verbunden.</li>
+            <li>Ein Ausgang (Output) wird platziert und mit der Ausgabe des AND-Gatters verbunden.</li>
+            <h4>Testen</h4>
+            <p>Die Eingangsvariablen werden auf verschiedene Kombinationen gesetzt und geprüft, on die Ausgabe nur bei
+                (1,1) wahr ist:</p>
+
+
+            <table>
+                <tr>
+                    <td class="center-text-green">(0, 0): Ausgabe = 0</td>
+                    <td class="center-text-green">(0, 1): Ausgabe = 0</td>
+                </tr>
+                <tr>
+                    <td>
+
+                        <div class="content">
+                            <img src="https://d1g9li960vagp7.cloudfront.net/wp-content/uploads/2018/09/Boolesche-Algebra-vereinfachen_Bild1-1024x576.jpg"
+                                alt="Bild BA_1_1" class="GD-img" />
+                        </div>
+                    </td>
+                    <td>
+
+                        <div class="content">
+                            <img src="https://d1g9li960vagp7.cloudfront.net/wp-content/uploads/2018/09/Boolesche-Algebra-vereinfachen_Bild1-1024x576.jpg"
+                                alt="Bild BA_1_2" class="GD-img" />
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="center-text-green">(1, 0): Ausgabe = 0</td>
+                    <td class="center-text-green">(1, 1): Ausgabe = 1</td>
+
+                </tr>
+                <tr>
+                    <td>
+
+                        <div class="content">
+                            <img src="https://d1g9li960vagp7.cloudfront.net/wp-content/uploads/2018/09/Boolesche-Algebra-vereinfachen_Bild1-1024x576.jpg"
+                                alt="Bild BA_1_3" class="GD-img" />
+                        </div>
+                    </td>
+                    <td>
+
+                        <div class="content">
+                            <img src="https://d1g9li960vagp7.cloudfront.net/wp-content/uploads/2018/09/Boolesche-Algebra-vereinfachen_Bild1-1024x576.jpg"
+                                alt="Bild BA_1_4" class="GD-img" />
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+
+            <ol class="bold-number-list" start="2">
+                <li> <strong>Modifizieren Sie die Schaltung, indem Sie einen NOT-Operator hinzufügen, um die Ausgabe
+                        des AND-Gatters zu invertieren. Beobachten Sie, wie sich das Ausgabesignal ändert.</strong>
+                </li>
+            </ol>
+            <h4>Schaltung erweitern</h4>
+            <li>Ein NOT-Gatter wird auf der Arbeitsfläche platziert.</li>
+            <li>Die Ausgabe des AND-Gatters wird mit dem Eingang des NOT-Gatters verbunden.</li>
+            <li>Die Ausgabe des NOT-Gatters wird mit dem Output verbunden.</li>
+            <h4>Testen</h4>
+            <li>Die Eingangsvariablen werden auf alle Kombinationen gesetzt. Es wird beobachtet, wie die Ausgabe
+                invertiert wird:</li>
+            <table>
+                <tr>
+                    <td class="center-text-green">(0, 0): Ausgabe = 1</td>
+                    <td class="center-text-green">(0, 1): Ausgabe = 1</td>
+                </tr>
+                <tr>
+                    <td>
+
+                        <div class="content">
+                            <img src="https://d1g9li960vagp7.cloudfront.net/wp-content/uploads/2018/09/Boolesche-Algebra-vereinfachen_Bild1-1024x576.jpg"
+                                alt="Bild BA_1_1" class="GD-img" />
+                        </div>
+                    </td>
+                    <td>
+
+                        <div class="content">
+                            <img src="https://d1g9li960vagp7.cloudfront.net/wp-content/uploads/2018/09/Boolesche-Algebra-vereinfachen_Bild1-1024x576.jpg"
+                                alt="Bild BA_1_2" class="GD-img" />
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="center-text-green">(1, 0): Ausgabe = 1</td>
+                    <td class="center-text-green">(1, 1): Ausgabe = 0</td>
+
+                </tr>
+                <tr>
+                    <td>
+
+                        <div class="content">
+                            <img src="https://d1g9li960vagp7.cloudfront.net/wp-content/uploads/2018/09/Boolesche-Algebra-vereinfachen_Bild1-1024x576.jpg"
+                                alt="Bild BA_1_3" class="GD-img" />
+                        </div>
+                    </td>
+                    <td>
+
+                        <div class="content">
+                            <img src="https://d1g9li960vagp7.cloudfront.net/wp-content/uploads/2018/09/Boolesche-Algebra-vereinfachen_Bild1-1024x576.jpg"
+                                alt="Bild BA_1_4" class="GD-img" />
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+
+            <ol class="bold-number-list" start="3">
+                <li> <strong>Konstruieren Sie eine Schaltung, die die OR-Operation zwischen zwei Variablen
+                        demonstriert. Testen Sie alle möglichen Kombinationen von Eingangswerten und notieren Sie die
+                        Ergebnisse.</strong>
+                </li>
+            </ol>
+            <h4>Schaltung erstellen</h4>
+            <ol>
+                <li>Zwei Eingänge (Inputs) werden auf der Arbeitsfläche platziert.</li>
+                <li>Ein OR-Gatter wird auf die Arbeitsfläche gezogen.</li>
+                <li>Die Eingänge werden mit den Eingängen des OR-Gatters verbunden.</li>
+                <li>Die Ausgabe des OR-Gatters wird mit einem Output verbunden.</li>
+            </ol>
+            <h4>Testen</h4>
+            <table>
+                <tr>
+                    <td class="center-text-green">(0, 0): Ausgabe = 0</td>
+                    <td class="center-text-green">(0, 1): Ausgabe = 1</td>
+                </tr>
+                <tr>
+                    <td>
+
+                        <div class="content">
+                            <img src="https://d1g9li960vagp7.cloudfront.net/wp-content/uploads/2018/09/Boolesche-Algebra-vereinfachen_Bild1-1024x576.jpg"
+                                alt="Bild BA_1_1" class="GD-img" />
+                        </div>
+                    </td>
+                    <td>
+
+                        <div class="content">
+                            <img src="https://d1g9li960vagp7.cloudfront.net/wp-content/uploads/2018/09/Boolesche-Algebra-vereinfachen_Bild1-1024x576.jpg"
+                                alt="Bild BA_1_2" class="GD-img" />
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="center-text-green">(1, 0): Ausgabe = 1</td>
+                    <td class="center-text-green">(1, 1): Ausgabe = 1</td>
+
+                </tr>
+                <tr>
+                    <td>
+
+                        <div class="content">
+                            <img src="https://d1g9li960vagp7.cloudfront.net/wp-content/uploads/2018/09/Boolesche-Algebra-vereinfachen_Bild1-1024x576.jpg"
+                                alt="Bild BA_1_3" class="GD-img" />
+                        </div>
+                    </td>
+                    <td>
+
+                        <div class="content">
+                            <img src="https://d1g9li960vagp7.cloudfront.net/wp-content/uploads/2018/09/Boolesche-Algebra-vereinfachen_Bild1-1024x576.jpg"
+                                alt="Bild BA_1_4" class="GD-img" />
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+            <ol class="bold-number-list" start="4">
+                <li> <strong>Erweitern Sie die Schaltung um eine Kombination aus AND, OR und NOT-Operatoren, um eine
+                        komplexere logische Funktion zu erstellen. Dokumentieren Sie Ihre Ergebnisse und erklären Sie,
+                        wie die Schaltung funktioniert.</strong>
+                </li>
+            </ol>
+            <h4>Schaltungserweiterung</h4>
+            <p>Eine Schaltung wird erstellt, die folgende logische Funktion umsetzt: </p>
+            <p class="center-text-green">Output=(A AND B) OR (NOT(C))</p>
+            <p>Der Output ist wahr, wenn A und B beide wahr sind oder wenn C falsch ist.</p>
+            <h4>Schaltung erstellen</h4>
+            <ol>
+                <li>Eingänge: Drei Eingänge (A, B und C) werden auf der Arbeitsfläche platziert.</li>
+                <li>AND-Gatter: A und B werden mit einem AND-Gatter verbunden.</li>
+                <li>NOT-Gatter: Der Eingang C wird mit einem NOT-Gatter verbunden.</li>
+                <li>OR-Gatter: Die Ausgaben des AND-Gatters und des NOT-Gatters werden mit einem OR-Gatter verbunden.
+                </li>
+                <li>Output: Die Ausgabe des OR-Gatters wird mit einem Ausgang verbunden.</li>
+            </ol>
+            <h4>Testen</h4>
+            <p>Die Eingangsvariablen werden auf alle möglichen Kombinationen von A, B und C gesetzt, und die Ergebnisse
+                werden notiert.</p>
+            <table>
+                <tr>
+                    <td class="center-text-green">(0, 0, 0): Ausgabe = 1</td>
+                    <td class="center-text-green">(0, 0, 1): Ausgabe = 0</td>
+                </tr>
+                <tr>
+                    <td>
+
+                        <div class="content">
+                            <img src="https://d1g9li960vagp7.cloudfront.net/wp-content/uploads/2018/09/Boolesche-Algebra-vereinfachen_Bild1-1024x576.jpg"
+                                alt="Bild BA_1_1" class="GD-img" />
+                        </div>
+                    </td>
+                    <td>
+
+                        <div class="content">
+                            <img src="https://d1g9li960vagp7.cloudfront.net/wp-content/uploads/2018/09/Boolesche-Algebra-vereinfachen_Bild1-1024x576.jpg"
+                                alt="Bild BA_1_2" class="GD-img" />
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="center-text-green">(0, 1, 0): Ausgabe = 1</td>
+                    <td class="center-text-green">(0, 1, 1): Ausgabe = 0</td>
+
+                </tr>
+                <tr>
+                    <td>
+
+                        <div class="content">
+                            <img src="https://d1g9li960vagp7.cloudfront.net/wp-content/uploads/2018/09/Boolesche-Algebra-vereinfachen_Bild1-1024x576.jpg"
+                                alt="Bild BA_1_3" class="GD-img" />
+                        </div>
+                    </td>
+                    <td>
+
+                        <div class="content">
+                            <img src="https://d1g9li960vagp7.cloudfront.net/wp-content/uploads/2018/09/Boolesche-Algebra-vereinfachen_Bild1-1024x576.jpg"
+                                alt="Bild BA_1_4" class="GD-img" />
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="center-text-green">(1, 0, 0): Ausgabe = 1</td>
+                    <td class="center-text-green">(1, 0, 1): Ausgabe = 0</td>
+
+                </tr>
+                <tr>
+                    <td>
+
+                        <div class="content">
+                            <img src="https://d1g9li960vagp7.cloudfront.net/wp-content/uploads/2018/09/Boolesche-Algebra-vereinfachen_Bild1-1024x576.jpg"
+                                alt="Bild BA_1_3" class="GD-img" />
+                        </div>
+                    </td>
+                    <td>
+
+                        <div class="content">
+                            <img src="https://d1g9li960vagp7.cloudfront.net/wp-content/uploads/2018/09/Boolesche-Algebra-vereinfachen_Bild1-1024x576.jpg"
+                                alt="Bild BA_1_4" class="GD-img" />
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="center-text-green">(1, 1, 0): Ausgabe = 1</td>
+                    <td class="center-text-green">(1, 1, 1): Ausgabe = 1</td>
+
+                </tr>
+                <tr>
+                    <td>
+
+                        <div class="content">
+                            <img src="https://d1g9li960vagp7.cloudfront.net/wp-content/uploads/2018/09/Boolesche-Algebra-vereinfachen_Bild1-1024x576.jpg"
+                                alt="Bild BA_1_3" class="GD-img" />
+                        </div>
+                    </td>
+                    <td>
+
+                        <div class="content">
+                            <img src="https://d1g9li960vagp7.cloudfront.net/wp-content/uploads/2018/09/Boolesche-Algebra-vereinfachen_Bild1-1024x576.jpg"
+                                alt="Bild BA_1_4" class="GD-img" />
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <h4>Funktionsweise</h4>
+
+            <li>Das AND-Gatter überprüft, ob A und B beide wahr sind.</li>
+            <li>Das NOT-Gatter invertiert den Wert von C. Wenn C falsch ist (0), wird es wahr (1).</li>
+            <li>Das OR-Gatter kombiniert die Ergebnisse des AND- und NOT-Gatters.</li>
+            <li>Der Output ist wahr, wenn mindestens eine der Bedingungen erfüllt ist:</li>
+
+            <li style="padding-left: 60px;">A AND B ist wahr.</li>
+            <li style="padding-left: 60px;">C ist falsch (nach Invertierung durch das NOT-Gatter).</li>
+
+        </div>
+        <div class="h1-container">
+            <h1>Einstein-Rätsel</h1>
+            <h2>Anwendung der Booleschen Algebra</h2>
+        </div>
     </main>
 
-<!-- Scroll-to-Top Button -->
-<button id="scrollToTopBtn" title="Nach oben scrollen">↑</button>
+    <!-- Scroll-to-Top Button -->
+    <button id="scrollToTopBtn" title="Nach oben scrollen">↑</button>
 
-<script>
-    // JavaScript für den Scroll-to-Top-Button
-    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    <script>
+        // JavaScript für den Scroll-to-Top-Button
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
-    // Button anzeigen/verstecken
-    window.onscroll = function() {
-        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-            scrollToTopBtn.style.display = "block";
-        } else {
-            scrollToTopBtn.style.display = "none";
-        }
-    };
+        // Button anzeigen/verstecken
+        window.onscroll = function () {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        };
 
-    // Nach oben scrollen
-    scrollToTopBtn.onclick = function() {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-    };
-</script>
+        // Nach oben scrollen
+        scrollToTopBtn.onclick = function () {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        };
+    </script>
 
     <footer>
         <p>&copy; 2025 Larissa Kazungu-Igumba</p>
     </footer>
+
 </body>
+
 </html>
