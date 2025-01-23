@@ -31,7 +31,8 @@
 
         <div class="h1-container">
             <h1>Boolsche Algebra</h1>
-            <h2>Einführung in die Boolsche Algebra</h2>
+            <h2 class="smaller-space-bottom">Einführung in die Boolsche Algebra</h2>
+            <div class="gradient-line"></div>
             <p class="justified-text">Die Boolsche Algebra ist ein Teilgebiet der Mathematik, das sich mit der
                 Verarbeitung von Wahrheitswerten beschäftigt. Sie wurde von George Boole entwickelt und bildet die
                 Grundlage der digitalen Schaltungstechnik sowie der Informatik.
@@ -343,13 +344,109 @@
             <li>Das OR-Gatter kombiniert die Ergebnisse des AND- und NOT-Gatters.</li>
             <li>Der Output ist wahr, wenn mindestens eine der Bedingungen erfüllt ist:</li>
 
-            <li style="padding-left: 60px;">A AND B ist wahr.</li>
-            <li style="padding-left: 60px;">C ist falsch (nach Invertierung durch das NOT-Gatter).</li>
+            <li class="indentation">A AND B ist wahr.</li>
+            <li class="indentation">C ist falsch (nach Invertierung durch das NOT-Gatter).</li>
 
         </div>
         <div class="h1-container">
             <h1>Einstein-Rätsel</h1>
-            <h2>Anwendung der Booleschen Algebra</h2>
+            <h2 class="smaller-space-bottom">Anwendung der Booleschen Algebra</h2>
+            <div class="gradient-line"></div>
+            <p class="justified-text">In dieser Übung geht es darum, das berühmte Einstein-Rätsel zu lösen, indem man
+                die Prinzipien der Booleschen Algebra anwendet. Ziel ist es, herauszufinden, wer welches Haustier hält,
+                indem man logische Operatoren kombiniert und die Hinweise des Rätsels systematisch überprüft.
+            </p>
+
+            <div class="box-green"><strong>Wer hat den Fisch als Haustier?</strong>
+                <ol>Folgende Hinweise sind gegeben:
+                    <li>Der Brite lebt im roten Haus.</li>
+                    <li>Der Schwede hält einen Hund.</li>
+                    <li>Der Däne trinkt gerne Tee.</li>
+                    <li>Das grüne Haus steht links vom weißen Haus.</li>
+                    <li>Der Besitzer des grünen Hauses trinkt Kaffee.</li>
+                    <li>Die Person, die Poker spielt, hält einen Vogel.</li>
+                    <li>Der Besitzer des gelben Hauses spielt Dart.</li>
+                    <li>Die Person im mittleren Haus trinkt Milch.</li>
+                    <li>Der Norweger wohnt im ersten Haus.</li>
+                    <li>Der Mann, der Billard spielt, wohnt neben dem, der eine Katze hält.</li>
+                    <li>Der Mann mit dem Pferd wohnt neben dem, der Dart spielt.</li>
+                    <li>Der Hobby-Fußballer trinkt Bier.</li>
+                    <li>Der Deutsche spielt Schach.</li>
+                    <li>Der Norweger wohnt neben dem blauen Haus.</li>
+                    <li>Der Mann, der Billard spielt, hat einen Nachbarn, der Wasser trinkt.</li>
+                </ol>
+            </div>
+            <h2 class="smaller-space-bottom">Schritt 1: Übersicht</h2>
+            <div class="gradient-line"></div>
+            <p class="justified-text">Die Lösung basiert auf fünf Eigenschaften:</p>
+
+            <li>Nationalität (Brite, Schwede, Däne, Norweger, Deutscher)</li>
+            <li>Hausfarbe (rot, grün, weiß, gelb, blau)</li>
+            <li>Getränk (Tee, Kaffee, Milch, Bier, Wasser)</li>
+            <li>Haustier (Hund, Vogel, Katze, Pferd, Fisch)</li>
+            <li>Hobby (Poker, Dart, Billard, Fußball, Schach)</li>
+
+            <h2 class="smaller-space-bottom">Schritt 2: Tabelle zur Lösung</h2>
+            <div class="gradient-line"></div>
+            <p class="justified-text">Eine Tabelle wird mit den fünf Häusern erstellt, und die Eigenschaften werden
+                gemäß den Hinweisen zugeordnet.</p>
+            <table class="table-green">
+                <thead>
+                    <tr>
+                        <th>Haus-Nr</th>
+                        <th>Nationalität</th>
+                        <th>Farbe</th>
+                        <th>Getränk</th>
+                        <th>Haustier</th>
+                        <th>Hobby</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>1</strong></td>
+                        <td>Norweger</td>
+                        <td>gelb</td>
+                        <td>Wasser</td>
+                        <td>Katze</td>
+                        <td>Dart</td>
+                    </tr>
+                    <tr>
+                        <td><strong>2</strong></td>
+                        <td>Däne</td>
+                        <td>blau</td>
+                        <td>Tee</td>
+                        <td>Pferd</td>
+                        <td>Billard</td>
+                    </tr>
+                    <tr>
+                        <td><strong>3</strong></td>
+                        <td>Brie</td>
+                        <td>rot</td>
+                        <td>Milch</td>
+                        <td>Vogel</td>
+                        <td>Poker</td>
+                    </tr>
+                    <tr>
+                        <td><strong>4</strong></td>
+                        <td>Deutscher</td>
+                        <td>grün</td>
+                        <td>Kaffee</td>
+                        <td>Fisch</td>
+                        <td>Schach</td>
+                    </tr>
+                    <tr>
+                        <td><strong>5</strong></td>
+                        <td>Schwede</td>
+                        <td>weiß</td>
+                        <td>Bier</td>
+                        <td>Hund</td>
+                        <td>Fußball</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2 class="smaller-space-bottom">Schritt 3: Antwort</h2>
+            <div class="gradient-line"></div>
+            <p class="justified-text">Der Deutsche, der im grünen Haus wohnt, hat den Fisch als Haustier.</p>
         </div>
     </main>
 

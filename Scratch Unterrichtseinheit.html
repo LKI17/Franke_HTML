@@ -1,58 +1,212 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scratch Unterrichtseinheit</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <h1>Scratch Unterrichtseinheit</h1>
     </header>
 
-     <!-- Navigationsmenü -->
-     <nav>
+    <!-- Navigationsmenü -->
+    <nav>
         <ul class="dropdown-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="Programmieren.html">Programmieren</a></li>
-                    <li><a href="Entwicklungsumgebungen.html">Entwicklungsumgebungen</a></li>
-                    <li><a href="Objects First vs. Objects Later.html">Objects First vs. Objects Later</a></li>
-                    <li><a href="Didaktische Ansätze.html">Didaktische Ansätze</a></li>
-                    <li><a href="Gamification.html">Gamification</a></li>
-                    <li><a href="Boolsche Algebra.html">Boolsche Algebra</a></li>
-                    <li><a href="Scratch Unterrichtseinheit.html" class="active">Scratch Unterrichtseinheit</a></li> <!-- Aktive Seite -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Programmieren.html">Programmieren</a></li>
+            <li><a href="Entwicklungsumgebungen.html">Entwicklungsumgebungen</a></li>
+            <li><a href="Objects First vs. Objects Later.html">Objects First vs. Objects Later</a></li>
+            <li><a href="Didaktische Ansätze.html">Didaktische Ansätze</a></li>
+            <li><a href="Gamification.html">Gamification</a></li>
+            <li><a href="Boolsche Algebra.html">Boolsche Algebra</a></li>
+            <li><a href="Scratch Unterrichtseinheit.html" class="active">Scratch Unterrichtseinheit</a></li>
+            <!-- Aktive Seite -->
         </ul>
     </nav>
 
     <main>
-        <p>Hier entsteht meine erste Webseite mit HTML und CSS.</p>
+        <div class="h1-container">
+            <h1>Entwicklung und Bewertung einer Programmierprojekt-Einheit für Schüler mit Scratch</h1>
+            <h2 class="smaller-space-bottom">Zielsetzung</h2>
+            <div class="gradient-line"></div>
+            <p class="justified-text ">Die Schüler sollen in Zweiergruppen ein Spiel mit Scratch entwickeln, um
+                grundlegende
+                Programmierkonzepte wie Variablen, Schleifen, Bedingungen und Objektorientierung anzuwenden. Zusätzlich
+                sollen sie kreative und technische Fähigkeiten sowie dokumentarische Kompetenzen weiterentwickeln.</p>
+            <h2 class="smaller-space-bottom">Anforderungskatalog</h2>
+            <div class="gradient-line"></div>
+            <h3>Technische Anforderungen</h3>
+            <ol>
+                <li><strong>Variablen: </strong>Mindestens zwei Variablen zur Speicherung von Spielpunkten oder
+                    Zuständen.</li>
+                <li><strong>Schleifen:</strong> Verwendung von mindestens einer Wiederholungs- oder Endlosschleife zur
+                    Steuerung von Spiellogik.</li>
+                <li><strong>Bedingungen:</strong> Einsatz von Wenn-Dann-Bedingungen zur Implementierung von
+                    Entscheidungen.</li>
+                <li><strong>Objekte und Nachrichten:</strong> Nutzung von mindestens drei Objekten (Sprites), die
+                    miteinander interagieren, und Austausch von Nachrichten zwischen Objekten zur Koordination.
+                </li>
+                <li><strong>Grafik und Animation:</strong> Mindestens zwei animierte Objekte, die auf Benutzereingaben
+                    reagieren.</li>
+                <li><strong>Benutzereingaben:</strong> Nutzung von Tastatur- oder Mauseingaben zur Steuerung des Spiels.
+                </li>
+                <li><strong>Sound:</strong> Einbindung von mindestens zwei Soundeffekten, passend zu Aktionen im Spiel.
+                </li>
+            </ol>
+            <h3>Kreative Anforderungen</h3>
+            <ol>
+                <li><strong>Spielidee:</strong> Ein innovatives Spielkonzept mit einer klaren Zielsetzung.</li>
+                <li><strong>Benutzerfreundlichkeit:</strong> Einfache und intuitive Bedienung.</li>
+                <li><strong>Design:</strong> Visuell ansprechende Gestaltung der Spielumgebung und Objekte.</li>
+            </ol>
+            <h3>Dokumentation</h3>
+            <ol>
+                <li><strong>Spielablauf:</strong> Detaillierte Beschreibung des Spielziels und der Mechanik.</li>
+                <li><strong>Technische Umsetzung:</strong> Erklärung der eingesetzten Programmierkonzepte.</li>
+                <li><strong>Grafische Darstellung:</strong> Flowchart oder Diagramm zur Visualisierung des Spielablaufs.
+                </li>
+            </ol>
+
+            <h2 class="smaller-space-bottom">Bewertungsbogen</h2>
+            <div class="gradient-line"></div>
+            <h3>Kriterien und Gewichtung</h3>
+            <ol>
+                <li><strong>Technische Umsetzung (40%)</strong></li>
+            </ol>
+
+            <li class="indentation">Verwendung von Variablen (5%)</li>
+            <li class="indentation">Einsatz von Schleifen und Bedingungen (10%)</li>
+            <li class="indentation">Interaktion zwischen Objekten (10%)</li>
+            <li class="indentation">Einbindung von Sound und Animation (5%)</li>
+            <li class="indentation">Implementierung von Benutzereingaben (10%)</li>
+
+            <ol start="2">
+                <li><strong>Kreativität und Design (30%)</strong></li>
+            </ol>
+            <li class="indentation">Originalität der Spielidee (10%)</li>
+            <li class="indentation">Visuelles und benutzerfreundliches Design (10%)</li>
+            <li class="indentation">Kreative Nutzung von Scratch-Features (10%)</li>
+
+            <ol start="3">
+                <li><strong>Dokumentation (20%)</strong></li>
+            </ol>
+            <li class="indentation">Vollständigkeit und Verständlichkeit der Dokumentation (10%)</li>
+            <li class="indentation">Grafische Darstellung des Ablaufs (10%)</li>
+
+            <ol start="4">
+                <li><strong>Präsentation (10%)</strong></li>
+            </ol>
+            <li class="indentation">Klarheit und Struktur der Präsentation (5%)</li>
+            <li class="indentation">Beantwortung von Fragen (5%)</li>
+
+            <h3 class="smaller-space-bottom">Bewertungsbogen Vorlage</3>
+            <p style="margin-bottom: 0;"></p>
+            <table>
+                <thead class="font-li-16">
+                    <tr>
+                        <th style="text-align: left;">Kriterium</th>
+                        <th style="padding-left: 15px; text-align: left;">Punkte</th>
+                    </tr>
+                </thead>
+                <tbody class="table-font-normal">
+                    <tr >
+                        <td>Verwednung von Variablen</td>
+                        <td style="padding-left: 15px;">5</td>
+                    </tr>
+                    <tr>
+                        <td>Einsatz von Schleifen und Bedingungen</td>
+                        <td style="padding-left: 15px;">10</td>
+                    </tr>
+                    <tr>
+                        <td>Interaktion zwischen Objekten</td>
+                        <td style="padding-left: 15px;">10</td>
+                    </tr>
+                    <tr>
+                        <td>Einbindung von Sound und Animation</td>
+                        <td style="padding-left: 15px;">5</td>
+                    </tr>
+                    <tr>
+                        <td>Implementierung von Benutzereingaben</td>
+                        <td style="padding-left: 15px;">10</td>
+                    </tr>
+                    <tr>
+                        <td>Originalität der Spielidee</td>
+                        <td style="padding-left: 15px;">10</td>
+                    </tr>
+                    <tr>
+                        <td>Visuelles und benutzerfreundliches Design</td>
+                        <td style="padding-left: 15px;">10</td>
+                    </tr>
+                    <tr>
+                        <td>Kreative Nutzung von Scratch-Features</td>
+                        <td style="padding-left: 15px;">10</td>
+                    </tr>
+                    <tr>
+                        <td>Vollständigkeit der Dokumentation</td>
+                        <td style="padding-left: 15px;">10</td>
+                    </tr>
+                    <tr>
+                        <td>Grafische Darstellung des Ablaufs</td>
+                        <td style="padding-left: 15px;">10</td>
+                    </tr>
+                    <tr>
+                        <td>Klarheit und Struktur der Präsentation</td>
+                        <td style="padding-left: 15px;">5</td>
+                    </tr>
+                    <tr>
+                        <td>Beantwortung von Fragen</td>
+                        <td style="padding-left: 15px;">5</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Gesamt</strong></td>
+                        <td style="padding-left: 15px;"><strong>100</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2 class="smaller-space-bottom">Planung der Unterrichtseinheit</h2>
+            <div class="gradient-line"></div>
+
+            <h2 class="smaller-space-bottom">Praktische Umsetzung mit Scratch</h2>
+            <div class="gradient-line"></div>
+
+            <h2 class="smaller-space-bottom">Reflexion über den Bewertungsprozess</h2>
+            <div class="gradient-line"></div>
+
+            
+        </div>
+
     </main>
 
-<!-- Scroll-to-Top Button -->
-<button id="scrollToTopBtn" title="Nach oben scrollen">↑</button>
+    <!-- Scroll-to-Top Button -->
+    <button id="scrollToTopBtn" title="Nach oben scrollen">↑</button>
 
-<script>
-    // JavaScript für den Scroll-to-Top-Button
-    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    <script>
+        // JavaScript für den Scroll-to-Top-Button
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
-    // Button anzeigen/verstecken
-    window.onscroll = function () {
-        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-            scrollToTopBtn.style.display = "block";
-        } else {
-            scrollToTopBtn.style.display = "none";
-        }
-    };
+        // Button anzeigen/verstecken
+        window.onscroll = function () {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        };
 
-    // Nach oben scrollen
-    scrollToTopBtn.onclick = function () {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-    };
-</script>
+        // Nach oben scrollen
+        scrollToTopBtn.onclick = function () {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        };
+    </script>
 
     <footer>
         <p>&copy; 2025 Larissa Kazungu-Igumba</p>
     </footer>
 </body>
+
 </html>

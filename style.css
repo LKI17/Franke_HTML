@@ -287,8 +287,6 @@ nav ul li a:hover {
     /* Vergrößerung beim Hover für mehr Interaktivität */
 }
 
-
-
 .bold-number-list {
     list-style-type: decimal;
     /* Verwendet nummerierte Liste */
@@ -299,7 +297,14 @@ nav ul li a:hover {
     /* Macht die Nummern fett */
 }
 
-.center-text-green{
+.box-green {
+    border: 2px solid #00897b;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #e6f5e6;
+}
+
+.center-text-green {
     text-align: center;
     color: #00796b;
     font-size: 18px;
@@ -368,6 +373,15 @@ nav ul li a:hover {
     padding: 5px;
     /* Beispiel: Abstand innerhalb des Rands */
 }
+
+.gradient-line {
+    height: 2px; /* Dünnere Linie */
+    background: linear-gradient(to right, #00796b, rgba(0, 255, 0, 0));
+    margin-top: 0; /* Kein Abstand zur Überschrift */
+    padding: 0;
+    width: 75%; /* Die Linie nimmt 3/4 der Breite ein */
+  }
+  
 /* Styling für den h1-container */
 .h1-container {
     background-color: #eef9f7;
@@ -413,6 +427,10 @@ nav ul li a:hover {
     /* Optionaler Abstand */
 }
 
+/* Einrücken links*/
+.indentation{
+    padding-left: 60px;
+}
 
 /* Vorteil- und Nachteil-Abschnitte nebeneinander */
 .row {
@@ -427,6 +445,10 @@ nav ul li a:hover {
     /* Abstand verkleinern */
 }
 
+.smaller-space-bottom{
+    margin-bottom: 0;
+}
+
 .table-fit td:first-child,
 .table-fit th:first-child {
     width: 15%;
@@ -435,6 +457,10 @@ nav ul li a:hover {
     /* Einheitliche Schriftgröße */
 }
 
+.table-font-normal{
+    font-weight: normal;
+    font-size: 16px;
+}
 .table-green {
     border: 1px solid #00796b;
     /* Rahmen mit grüner Farbe */
@@ -539,6 +565,47 @@ nav ul li a:hover {
     /* Dreht den Text um 90 Grad */
     font-weight: bold;
 }
+
+/* Stil für den Button "Zurück" oben links */
+#backButtonTop {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+#backButtonTop:hover {
+    background-color: #45a049;
+}
+
+/* Stil für den Button "Zurück zur Webseite" unten links */
+#backButtonBottom {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+#backButtonBottom:hover {
+    background-color: #45a049;
+}
+
 
 #scrollToTopBtn {
     display: none;
