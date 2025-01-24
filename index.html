@@ -41,27 +41,10 @@
     </main>
 
 
-    <!-- Scroll-to-Top Button -->
-    <button id="scrollToTopBtn" title="Nach oben scrollen">↑</button>
+     <!-- Scroll-to-Top Button -->
+     <button id="scrollToTopBtn" title="Nach oben scrollen">↑</button>
 
-    <script>
-        // JavaScript für den Scroll-to-Top-Button
-        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-
-        // Button anzeigen/verstecken
-        window.onscroll = function () {
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                scrollToTopBtn.style.display = "block";
-            } else {
-                scrollToTopBtn.style.display = "none";
-            }
-        };
-
-        // Nach oben scrollen
-        scrollToTopBtn.onclick = function () {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-        };
-    </script>
+     <script src="script.js"></script>
 
     <footer>
         <p>&copy; 2025 Larissa Kazungu-Igumba</p>
