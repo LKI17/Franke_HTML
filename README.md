@@ -1,9 +1,7 @@
 Dieses Repository enthält ein Projekt, das eine HTML-Seite sowie zugehörige Dateien wie JavaScript, CSS und Bilder umfasst. Diese Dateien wurden erstellt, um ein funktionales Webprojekt zu unterstützen.
 
 Live-Demo
-Die HTML-Seite ist öffentlich zugänglich und kann direkt im Browser aufgerufen werden. Du kannst die Seite unter folgendem Link ansehen:
-
-Live-Demo der HTML-Seite
+Die HTML-Seite ist öffentlich zugänglich und kann direkt im Browser aufgerufen werden. Du kannst die Seite unter folgendem Link ansehen: https://lki17.github.io/Franke_HTML/
 
 Inhalt des Repositories
 index.html: Die Haupt-HTML-Datei des Projekts.
